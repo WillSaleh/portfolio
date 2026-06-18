@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Space_Grotesk, Hanken_Grotesk, IBM_Plex_Mono } from "next/font/google";
-import "./global.css";
+import "./globals.css";
 
 const spaceGrotesk = Space_Grotesk({ variable: "--font-space-grotesk", subsets: ["latin"] });
 const hankenGrotesk = Hanken_Grotesk({ variable: "--font-hanken-grotesk", subsets: ["latin"] });
