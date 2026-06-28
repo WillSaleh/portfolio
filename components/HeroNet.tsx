@@ -11,10 +11,11 @@ export function HeroNet() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
-    const canvas = canvasRef.current;
-    if (!canvas) return;
-    const ctx = canvas.getContext("2d");
-    if (!ctx) return;
+    // The effect runs only after the <canvas> has mounted, so the ref and its
+    // 2D context always exist. Asserting non-null (!) here gives `canvas`/`ctx`
+    // non-null TYPES, which the closures below (frame/resize/onMove) inherit.
+    const canvas = canvasRef.current!;
+    const ctx = canvas.getContext("2d")!;
 
     const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 

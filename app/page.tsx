@@ -1,5 +1,6 @@
 import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/Hero";
+import { About } from "@/components/About";
 
 export default function Home() {
   return (
@@ -7,7 +8,8 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
-        {/* sections get added here as we build them: <About/>, <Experience/>, … */}
+        <About />
+        {/* sections get added here as we build them: <Experience/>, <Projects/>, … */}
       </main>
     </>
   );
