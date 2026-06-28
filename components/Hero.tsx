@@ -1,8 +1,10 @@
+import { HeroNet } from "@/components/HeroNet";
+
 export function Hero() {
   return (
     <header id="top" className="relative flex min-h-svh items-center overflow-hidden pt-20">
       <div className="hero-grid" />
-      {/* the particle network <HeroNet /> mounts here next — leaving room for it */}
+      <HeroNet /> 
 
       <div className="wrap relative z-10">
         <div className="inline-flex items-center gap-2.5 rounded-full border border-line-soft bg-[oklch(0.20_0.010_65/0.5)] px-3.5 py-[7px] font-mono text-[12.5px] text-muted backdrop-blur">
